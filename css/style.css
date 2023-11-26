@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+/* the highest-level parent element in an HTML document */
+
+:root{
+   /* Define global variables */
+    --main-color:#00bfff;
+    --second-color:#1e90ff;
+
+}
+/* padding of all the balises section */
+
+section{
+    padding: 50px 10%;
+
+}
+/* width of all the balises img */
+
+img{
+    width: 100%;
+}
+
+/* logo css ends*/
+
+/* navbar css starts*/
+
+/* header */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 /14%);
+    padding: 15px 10%;
+    transition: .2s;
+
+}
+
+
+/* logo css starts*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* navbar css ends*/
+
+/* first section css starts*/
+
+.first{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #dcdcdc;
+    gap: 1rem;
+}
+
+.first-img{
+    flex:1 1 21rem;
+    border: 3px solid #fff;
+    background: #fff;
+    border-radius: 6px;
+    color: #a9a9a9;
+}
+
+.first-text{
+    flex:1 1 21rem;
+    color: #778899;
+
+}
+
+.first-text h2{
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.first-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;   
+}
+
+.btn{
+    padding: 7px 16px;
+    color: #fff;
+    border: 2px solid var(--second-color);
+    border-radius: 12px;
+    font-weight: 500;
+    background: var(--second-color);
+
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 39%;
+    justify-content: space-between;
+}
+.prev,
+.next {
+    font-size: 18px;
+    border: none;
+    color: #000;
+    background-color: #a9a9a9;
+    border-radius: 50%; 
+    cursor: pointer;
+    width: 25px; 
+    height: 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* position the buttons prev and next */
+.prev {
+    margin-left: 20px;
+}
+
+.next {
+    margin-right: 20px;
+}
+
+/* first section css ends*/
+
+/* second section css starts*/
+
+
+.country-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.country-container .box{
+    flex: 1 1 10rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    
+}
+.country-container .box p{
+    color: #a9a9a9 ;
+}
+
+
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* second section css ends*/
